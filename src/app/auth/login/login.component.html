@@ -1,0 +1,28 @@
+    <mat-card>
+
+
+
+  <form (submit)="onLogin(loginForm)" #loginForm="ngForm" *ngIf="!isLoading">
+
+        <mat-form-field>
+          <input matInput type="email" name="email"  ngModel placeholder="Email Address" #emailInput="ngModel" required email>
+          <mat-error *ngIf="emailInput.invalid"> Please Enter  a valid Email</mat-error>
+          </mat-form-field>
+
+
+
+      <mat-form-field>
+       <input matInput name="password"  ngModel type="password" placeholder="Password"   #passwordInput="ngModel" required>
+        <mat-error *ngIf="passwordInput.invalid"> Please Enter a Valid Password</mat-error>
+      </mat-form-field>
+
+      <button
+      mat-raised-button
+      color="primary"
+      type="submit">Login</button>
+
+      <a href="http://127.0.0.1:3000/auth/google">Sign In with Google</a>
+
+</form>
+
+</mat-card>

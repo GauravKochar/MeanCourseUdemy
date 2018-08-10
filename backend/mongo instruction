@@ -1,0 +1,14 @@
+
+ to set the variable path and start mongo db server
+ export PATH=/Users/daffolapmac-06/Downloads/mongodb-osx-x86_64-4.0.0/bin:$PATH
+ mongod
+    mongod --dbpath /Users/daffolapmac-06/Desktop/meanCourse
+  mongo
+  use meanCourse
+  show collections
+  db.posts.find()
+
+
+
+  to install mongoose
+  npm install --save mongoose
